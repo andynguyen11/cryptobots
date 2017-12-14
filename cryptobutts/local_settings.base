@@ -1,0 +1,21 @@
+import os
+
+LOCAL_DB = True
+
+database = {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'cryptobutts',
+    'USER': '',
+    'PASSWORD': '',
+    'HOST': ''
+}
+
+DATABASES = {
+    'default': database
+}
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
+
+LOCAL_DEV = True
+
+BASE_URL = 'localhost:8000'
